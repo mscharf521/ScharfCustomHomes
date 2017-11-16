@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/jpg" href="img/Scharf Logo.jpg">
+		<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Josefin Slab' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<title>Scharf Custom Homes</title>
+
+		<!--Start of Slideshow Code-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- optional touchswipe file to enable swipping to navigate slideshow -->
+		<script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
+		<script type="text/javascript" src="fadeslideshow.js">
+		/***********************************************
+		* Ultimate Fade In Slideshow v2.0- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+		* Please keep this notice intact
+		* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+		***********************************************/
+		</script>
+		<script type="text/javascript">
+		var mygallery=new fadeSlideShow({
+			wrapperid: "slideshow", //ID of blank DIV on page to house Slideshow
+			dimensions: ['100%','100%'], //width/height of gallery in pixels. Should reflect dimensions of largest image
+			imagearray: [
+				["img/Huntbridge-Front.jpg"],
+				["img/Parkwoods-Front.jpg"],
+				["img/Parkwoods-Kitchen.jpg"],
+				["img/Parkwoods-Stairs.jpg"],
+				["img/Parkwoods-Porch.jpg"] //<--no trailing comma after very last image element!
+			],
+			displaymode: {type:'auto', pause:2500, cycles:0, wraparound:false},
+			persist: false, //remember last viewed slide and recall within same session?
+			fadeduration: 500, //transition duration (milliseconds)
+			descreveal: "always",
+			togglerid: ""
+		})
+		</script>
+		<!--End Slideshow Code-->
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="back">
+			<header>
+				<a href="index.html">
+					<img src="img/Scharf Logo.jpg" id="logo"></img>
+				</a>
+
+				<nav>
+
+					<a href="#" id="menu-icon"><img src="img/menu-button.png" id="menu-icon-img"></a>
+					<ul id="nav-list">
+						<li class="vert-nav-div"><a href="index.html">Home</a></li>
+						<li class="vert-nav-div"><a href="about.html">About</a></li>
+						<li class="vert-nav-div"><a href="properties.html">Properties</a></li>
+						<li class="vert-nav-div"><a href="gallery.html">Gallery</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</nav>
+				<img src="img/shadow-1.png" id="shadow-1">
+				<img src="img/shadow-2.png" id="shadow-2">
+				<div id="nav-toggler"><img src="img/menu-button.png" id="toggler-image"></div>
+				<div id="nav-mobile">
+					<ul id="nav-list-mobile">
+						<li class="vert-nav-div"><a href="index.html">Home</a></li>
+						<li class="vert-nav-div"><a href="about.html">About</a></li>
+						<li class="vert-nav-div"><a href="properties.html">Properties</a></li>
+						<li class="vert-nav-div"><a href="gallery.html">Gallery</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+					</ul>
+				</div>
+			</header>
+			
+			<div id="content">
+				<h1><i>...Where it's good to be home</i></h1>
+				<div id="slideback">
+					<div id="slideshow"></div>
+				</div>
+				<div>
+					<p id="BodyText">
+						<strong class="firstLetter">B</strong>uilding a custom home is a creative experience and an artistic expression, where ideas mixed with emotions spring to life. This is especially true for Scharf Custom Homes' president, John M. Scharf, whose artistic background includes training at the Washington University School of Fine Arts and the University of Kansas. His artist's eyes, coupled with a passionate pursuit of excellence, have made Scharf Custom Homes a respected member of St. Louis' custom home industry.<br><br>
+						Beautiful examples of the company's creations are on display here and we invite you to take a few minutes to look them over. Behind each finished product, however, is the vital planning, preparation and careful attention to detail that make a Scharf home not only beautiful, but an enduring, highly livable expression of the owner's needs and desires. This is a primary key to the company's success-being able to translate the client's ideas into magnificent reality.<br><br>
+						If you are seeking a custom home builder who is dedicated, experienced, and looks at custom building through an artist's eyes, contact John Scharf at Scharf Custom Homes. John will personally meet with you to discuss your ideas and requirements, and explain how the Scharf process can create the home you have always wanted.
+					</p>
+				</div>
+				<img src="img/Cottage-Company2.png" id="Cottage-Logo">
+			</div>
+
+			<hr>
+			<div id="footer">
+				<div id="foot-left">
+					<p id="footerName"><strong> Scharf Custom Homes</strong></p>
+					<p id="footerInfo">
+					16833 Kingstowne Estates Drive | St. Louis, Missouri | 63011<br>
+					<a href="tel:314-707-4238"  id="emailLink">314-707-4238</a> | <a href="mailto:john@scharfhomes.com" id="emailLink">john@scharfhomes.com</a>
+					</p>
+				</div>
+				<div id="foot-right">
+					<p id="footerCopyright">
+						&copy; 2017 Scharf Web Design. <br> All rights reserved.
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
