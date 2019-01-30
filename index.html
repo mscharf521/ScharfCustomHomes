@@ -3,13 +3,15 @@
 
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" type="image/jpg" href="img/Scharf Logo.jpg">
+
 		<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Josefin Slab' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+		
 		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="script.js"></script>
+		
 		<title>Scharf Custom Homes</title>
 
 		<!--Start of Slideshow Code-->
@@ -28,11 +30,11 @@
 			wrapperid: "slideshow", //ID of blank DIV on page to house Slideshow
 			dimensions: ['100%','100%'], //width/height of gallery in pixels. Should reflect dimensions of largest image
 			imagearray: [
-				["img/Huntbridge-Front.jpg"],
-				["img/Parkwoods-Front.jpg"],
-				["img/Parkwoods-Kitchen.jpg"],
-				["img/Parkwoods-Stairs.jpg"],
-				["img/Parkwoods-Porch.jpg"] //<--no trailing comma after very last image element!
+				["img/exteriors/Huntbridge-Front.jpg"],
+				["img/exteriors/Parkwoods-Front.jpg"],
+				["img/kitchens/Parkwoods-Kitchen.jpg"],
+				["img/interiors/Parkwoods-Stairs.jpg"],
+				["img/exteriors/Parkwoods-Porch.jpg"] //<--no trailing comma after very last image element!
 			],
 			displaymode: {type:'auto', pause:2500, cycles:0, wraparound:false},
 			persist: false, //remember last viewed slide and recall within same session?
@@ -42,19 +44,23 @@
 		})
 		</script>
 		<!--End Slideshow Code-->
-
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="genstyle.css">
+		<link rel="stylesheet" type="text/css" href="indexstyle.css">
+		
 	</head>
 	<body>
+		<div id="top"></div>
 		<div id="back">
+			<!--header-->
+			
 			<header>
-				<a href="index.html">
-					<img src="img/Scharf Logo.jpg" id="logo"></img>
-				</a>
-
-				<nav>
-
-					<a href="#" id="menu-icon"><img src="img/menu-button.png" id="menu-icon-img"></a>
+				
+				<div id="logo">
+					<a href="index.html"><img id="Scharf-Logo" src="img/Scharf Logo.jpg"></img></a>
+					<img src="img/Cottage-Company2.png" id="Cottage-Logo">
+				</div>
+				<div id="div2"></div>
+				<div id="nav">
 					<ul id="nav-list">
 						<li class="vert-nav-div"><a href="index.html">Home</a></li>
 						<li class="vert-nav-div"><a href="about.html">About</a></li>
@@ -62,23 +68,27 @@
 						<li class="vert-nav-div"><a href="gallery.html">Gallery</a></li>
 						<li><a href="contact.html">Contact Us</a></li>
 					</ul>
-				</nav>
+				</div>
+				
 				<img src="img/shadow-1.png" id="shadow-1">
 				<img src="img/shadow-2.png" id="shadow-2">
-				<div id="nav-toggler"><img src="img/menu-button.png" id="toggler-image"></div>
-				<div id="nav-mobile">
-					<ul id="nav-list-mobile">
-						<li class="vert-nav-div"><a href="index.html">Home</a></li>
-						<li class="vert-nav-div"><a href="about.html">About</a></li>
-						<li class="vert-nav-div"><a href="properties.html">Properties</a></li>
-						<li class="vert-nav-div"><a href="gallery.html">Gallery</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
-					</ul>
-				</div>
+				
 			</header>
-			
+			<div id="nav-toggler"><img src="img/menu-button.png" id="toggler-image"></div>
+			<div id="nav-mobile">
+				<ul id="nav-list-mobile">
+					<li class="vert-nav-div"><a href="index.html">Home</a></li>
+					<li class="vert-nav-div"><a href="about.html">About</a></li>
+					<li class="vert-nav-div"><a href="properties.html">Properties</a></li>
+					<li class="vert-nav-div"><a href="gallery.html">Gallery</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+				<div id="nav-mobile-x-button"><img src="img/x-mark.png"></div>
+			</div>
+			<!--header-->
+
 			<div id="content">
-				<h1><i>...Where it's good to be home</i></h1>
+				<h1><i>Where it's good to be home</i></h1>
 				<div id="slideback">
 					<div id="slideshow"></div>
 				</div>
@@ -89,9 +99,9 @@
 						If you are seeking a custom home builder who is dedicated, experienced, and looks at custom building through an artist's eyes, contact John Scharf at Scharf Custom Homes. John will personally meet with you to discuss your ideas and requirements, and explain how the Scharf process can create the home you have always wanted.
 					</p>
 				</div>
-				<img src="img/Cottage-Company2.png" id="Cottage-Logo">
 			</div>
 
+			<div class="top-of-page"><a href="#top">Top of Page</a></div>
 			<hr>
 			<div id="footer">
 				<div id="foot-left">

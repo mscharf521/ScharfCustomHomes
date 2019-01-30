@@ -1,0 +1,308 @@
+/*--------ABOUT-------------------------------------------------*/
+
+.about-section h2 {
+	font-size: 160%;
+}
+
+#scharf {
+	margin: 20px 70px;
+}
+
+#team {
+	margin: 20px 70px;
+	display: none;
+}
+
+#customers {
+	margin: 20px 70px;
+	display: none;
+}
+
+#process {
+	margin: 20px 70px;
+	display: none;
+}
+
+#renovations {
+	margin: 20px 70px;
+	display: none;
+}
+
+.togglers {
+	cursor: pointer;
+}
+
+.togglers:hover {
+	color: #bd926c;
+}
+
+#scharf-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#scharf p {
+	flex: 2;
+	order: 1;
+	font-size: 120%;
+}
+
+#scharf-image-border {
+	flex: 1;
+	order: 2;
+	width: 35%;
+	height: auto;
+	padding: 10px 10px;
+	background-color: #FEFEFE;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+#scharf-image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+#team-container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: row;
+}
+
+#team-container a {
+	color: #242424;
+	
+}
+
+#left-col {
+	flex: 1;
+	order: 1;
+	height: 100%;
+}
+
+#right-col {
+	flex: 1;
+	order: 2;
+	height: 100%;
+}
+
+.company {
+	margin: 40px 20px;
+}
+
+.company img {
+	margin-bottom: -10px;
+}
+
+.company b {
+	font-size: 110%;
+}
+
+.Logo-square {
+ 	width: 25%;
+}
+
+.Logo-rect {
+	width: 30%;
+}
+
+.Logo-long-rect {
+	width: 35%;
+}
+
+.Logo-long {
+	width: 45%;
+}
+
+.Logo-x-long {
+	width: 55%;
+}
+
+#customer-wrapper {
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+#customer-left {
+	order: 1;
+	flex: 1;
+}
+
+#customer-right {
+	order: 2;
+	flex: 1;
+	height: 500px;
+}
+
+#customer-description {
+	margin-right: 60px;
+	font-size: 110%;
+}
+
+#testimony {
+	margin: auto;
+}
+
+.customer-selected {
+	font-size: 130%;
+	padding: 2px 4px;
+	display: inline;
+	/*border: solid 1px black;
+	border-radius: 2px;*/
+	text-shadow: 0 2px 3px rgba(0,0,0,0.6);
+	cursor: pointer;
+}
+
+.customer-unselected {
+
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.testimony-selected {
+	display: block;
+	width: 90%;
+	height: 95%;
+	overflow: scroll;
+	background-color: rgba(255,255,255,0.4);
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+	padding: 10px;
+	margin-top: -25px;
+	/*font-family: 'Verdana';*/
+}
+
+.testimony-unselected {
+	display: none;
+}
+
+#renovations-flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#renovations p {
+	flex: 2;
+	order: 1;
+	font-size: 120%;
+}
+
+#renovations-image-border {
+	flex: 2;
+	order: 2;
+	width: 100%;
+	height: auto;
+	padding: 10px 10px;
+	background-color: #FEFEFE;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+#renovations-image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+	#scharf {
+		margin: 20px;
+	}
+
+	#team {
+		margin: 20px;
+	}
+
+	#customers {
+		margin: 20px;
+	}
+
+	#process {
+		margin: 20px;
+	}
+
+	#renovations {
+		margin: 20px;
+	}
+	/*---------------------------------*/
+	#scharf-flex {
+		flex-direction: column;
+	}
+
+	#scharf p {
+		order: 2;
+		font-size: 4vw;
+	}
+
+	#scharf-image-border {
+		order: 1;
+		width: 80%;
+		padding: 10px 10px;
+		background-color: #FEFEFE;
+		border-radius: 5px;
+		margin-left: 10px;
+		margin-top: 0px;
+	}
+
+	#scharf-image {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.company {
+		margin: 0px 0px 20px 0px;
+	}
+
+	.company img {
+		margin-bottom: -10px;
+	}
+
+	.company p {
+		font-size: 3vw;
+	}
+	.company b {
+		font-size: 3.5vw;
+	}
+
+	.Logo-square {
+	 	width: 35%;
+	}
+
+	.Logo-rect {
+		width: 40%;
+	}
+
+	.Logo-long-rect {
+		width: 45%;
+	}
+
+	.Logo-long {
+		width: 55%;
+	}
+
+	.Logo-x-long {
+		width: 75%;
+	}
+
+	#customer-right {
+		order: 2;
+		flex: 1;
+		height: 70vh;
+	}
+
+	#customer-left {
+		font-size: 90%;
+	}
+
+}

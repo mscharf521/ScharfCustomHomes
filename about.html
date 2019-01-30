@@ -3,8 +3,10 @@
 
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="shortcut icon" type="image/jpg" href="img/Scharf Logo.jpg">
+
+		<link rel="stylesheet" type="text/css" href="genstyle.css">
+		<link rel="stylesheet" type="text/css" href="aboutstyle.css">
+
 		<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Cutive Mono' rel='stylesheet'>
 		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
@@ -13,15 +15,18 @@
 
 	</head>
 	<body>
+		<div id="top"></div>
 		<div id="back">
+			<!--header-->
+			
 			<header>
-				<a href="index.html">
-					<img src="img/Scharf Logo.jpg" id="logo"></img>
-				</a>
-
-				<nav>
-
-					<a href="#" id="menu-icon"><img src="img/menu-button.png" id="menu-icon-img"></a>
+				
+				<div id="logo">
+					<a href="index.html"><img id="Scharf-Logo" src="img/Scharf Logo.jpg"></img></a>
+					<img src="img/Cottage-Company2.png" id="Cottage-Logo">
+				</div>
+				<div id="div2"></div>
+				<div id="nav">
 					<ul id="nav-list">
 						<li class="vert-nav-div"><a href="index.html">Home</a></li>
 						<li class="vert-nav-div"><a href="about.html">About</a></li>
@@ -29,20 +34,24 @@
 						<li class="vert-nav-div"><a href="gallery.html">Gallery</a></li>
 						<li><a href="contact.html">Contact Us</a></li>
 					</ul>
-				</nav>
+				</div>
+				
 				<img src="img/shadow-1.png" id="shadow-1">
 				<img src="img/shadow-2.png" id="shadow-2">
-				<div id="nav-toggler"><img src="img/menu-button.png" id="toggler-image"></div>
-				<div id="nav-mobile">
-					<ul id="nav-list-mobile">
-						<li class="vert-nav-div"><a href="index.html">Home</a></li>
-						<li class="vert-nav-div"><a href="about.html">About</a></li>
-						<li class="vert-nav-div"><a href="properties.html">Properties</a></li>
-						<li class="vert-nav-div"><a href="gallery.html">Gallery</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
-					</ul>
-				</div>
+				
 			</header>
+			<div id="nav-toggler"><img src="img/menu-button.png" id="toggler-image"></div>
+			<div id="nav-mobile">
+				<ul id="nav-list-mobile">
+					<li class="vert-nav-div"><a href="index.html">Home</a></li>
+					<li class="vert-nav-div"><a href="about.html">About</a></li>
+					<li class="vert-nav-div"><a href="properties.html">Properties</a></li>
+					<li class="vert-nav-div"><a href="gallery.html">Gallery</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+				<div id="nav-mobile-x-button"><img src="img/x-mark.png"></div>
+			</div>
+			<!--header-->
 
 			<div id="content">
 				<h1>About</h1>
@@ -58,10 +67,13 @@
 				</div>
 				<div id="scharf" class="about-section">
 					<h2>The Scharfs</h2>
-					<div id="scharf-image-border"><img src="img/Family-Picture.jpg" id="scharf-image"></div>
-					<p><strong class="firstLetter">J</strong>ohn Scharf, President of Scharf Custom Homes, is a seasoned veteran of the homebuilding and real estate industry. He has been designing and building homes since 1983, not only in the Greater St. Louis area, but also in Florida and North Carolina.<br><br>
-					Customer satisfaction is the primary goal for the company, and constant communication is the key. "We try to take the mystery out of custom home building by carefully exploring each step in the design and building process with our clients," John Scharf explains. "As a team, our goal is to create a home that is everything the client wants and more...where it's good to be home."<br><br>
-					The company builds strong relationships with its clients through continual customer relations, careful planning, and scheduling, and, as letters from our clients indicate, the process becomes an enjoyable, collaborative experience. For Scharf Custom Homes, that's the only way it should be.</p>
+					<div id="scharf-flex">
+						<div id="scharf-image-border"><img src="img/Family-Picture.jpg" id="scharf-image"></div>
+						<p><strong class="firstLetter">J</strong>ohn Scharf, President of Scharf Custom Homes, is a seasoned veteran of the homebuilding and real estate industry. He has been designing and building homes since 1983, not only in the Greater St. Louis area, but also in Florida and North Carolina.<br><br>
+						Customer satisfaction is the primary goal for the company, and constant communication is the key. "We try to take the mystery out of custom home building by carefully exploring each step in the design and building process with our clients," John Scharf explains. "As a team, our goal is to create a home that is everything the client wants and more...where it's good to be home."<br><br>
+						The company builds strong relationships with its clients through continual customer relations, careful planning, and scheduling, and, as letters from our clients indicate, the process becomes an enjoyable, collaborative experience. For Scharf Custom Homes, that's the only way it should be.</p>
+					</div>
+					
 				</div>
 				<div id="team" class="about-section">
 					<h2>The Team</h2>
@@ -71,48 +83,128 @@
 					<div id="team-container">
 						<div id="left-col">
 							<div class="company">
-								<img src="img/Allen-Roofing-Logo.jpg" class="Logo-square">
-								<p>Allen Roofing & Siding Company<br>
-									252 Old State Rd.<br>
-									Ellisville, MO 63021<br>
-									636-391-1117<br>
-									<a href="https://www.aroofing.net"> www.aroofing.net</a><br>
+								<img src="img/custom-stone-interiors-logo.jpg" class="Logo-long">
+								<p><b>Custom Stone Interiors</b><br>
+									1950 Walton Road<br>
+									Overland, MO 63114<br>
+									314-533-1282<br>
+									314-427-2001 (Fax)<br>
+									<a href="http://www.customstonestl.com/default.asp"> www.customstonestl.com</a><br>
 								</p>
 							</div>
 							<div class="company">
-								<img src="img/Pacific-Lumber-Co-Logo.png" class="Logo-long-rect">
-								<p>Pacific Lumber Company<br>
+								<img src="img/Pacific-Lumber-Co-Logo-2.png" class="Logo-long-rect">
+								<p><b>Pacific Lumber Company</b><br>
 									625 S. 4th Street<br>
 									Pacific, MO 63069<br>
 									636-271-3938<br>
 									636-257-6033 (Fax)<br>
-									<a href="http:www.kbdesignonline.com">wwww.kbdesignonline.com</a><br>
-								</p>
-							</div>
-							<div class="company">
-								<img src="img/kbd-logo.jpg" class="Logo-square">
-								<p>Kitchen & Bath Design<br>
-									945 S. Kirikwood Rd.<br>
-									Kirkwood, MO 63122<br>
-									314-822-4100<br>
 									<a href="http://pacificlumberco.com">www.pacificlumberco.com</a><br>
 								</p>
 							</div>
 							<div class="company">
+								<img src="img/kitchen-bath-design-logo.jpg" class="Logo-square">
+								<p><b>Kitchen & Bath Design</b><br>
+									945 S. Kirikwood Rd.<br>
+									Kirkwood, MO 63122<br>
+									314-822-4100<br>
+									<a href="http://www.kbdesignonline.com">www.kbdesignonline.com</a><br>
+								</p>
+							</div>
+							<div class="company">
 								<img src="img/metro-lighting.png" class="Logo-long-rect">
-								<p>Metro Lighting<br>
-									15004 Manchester Rd.<br>
-									Ballwin, MO 63011<br>
-									636-256-3600<br>
+								<p><b>Metro Lighting</b><br>
+									17485 N Outer 40 Rd<br>
+									Chesterfield, MO 63005<br>
+									636-449-1900<br>
 									<a href="http://metrolightingcenters.com">www.metrolightingcenters.com</a><br>
 								</p>
 							</div>
+							<div class="company">
+								<img src="img/HLS-Logo.png" class="Logo-long-rect">
+								<p><b>HLS Properties, Inc.</b><br>
+									275 W. First Street<br>
+									Eureka, MO 63025<br> 
+									636-938–4528<br>
+									636-938–6894 (Fax)<br>
+									<a href="http://hlspropertiesinc.com/">www.hlspropertiesinc.com</a><br>
+								</p>
+							</div>
+							<div class="company">
+								<img src="img/SA-Logo.png" class="Logo-square">
+								<p><b>Sherrill Associates, Inc.</b><br>
+									316 N Main St<br>
+									Edwardsville, IL 62025<br> 
+									618-656–9251<br>					<a href="http://sherrillassoc.com/">www.sherrillassoc.com</a><br>
+								</p>
+							</div>
+							<div class="company">
+								<img src="img/ehlen-logo.png" class="Logo-square">
+								<p><b>Ehlen Contractin, Inc.</b><br>
+									12893 Morgan's Meadow Rd<br>
+									Desoto, MO 63020<br>
+									636-337-7794<br>				
+									<a href="http://www.ehlencontracting.com/index.html">www.ehlencontracting.com</a><br>
+								</p>
+							</div>
+							<div class="company">
+								<img src="img/slyman-bros-logo.png" class="Logo-rect">
+								<p><b>Slyman Bros Appliances</b><br>
+									Greg Gibson<br>
+									15050 Manchester<br>
+									Ballwin ,MO 63011<br>
+									636-227-7727<br>				
+									<a href="http://www.slymanbros.com/">www.slymanbros.com</a><br>
+								</p>
+							</div>
+							<div class="company">
+								<img src="img/triggs-logo.png" class="Logo-rect">
+								<p><b>Triggs Photography, LLC</b><br>
+									307 West Tremont Ave<br>
+									Studio W<br>
+									Charlotte, NC 28203<br>
+									704-333-2223<br>
+									704-333-2232 (Fax)<br>
+									<a href="http://www.triggsphoto.com">www.triggsphoto.com</a><br>
+								</p>
+							</div>
+							<div class="company">
+								<p><b>Dinges Drywall</b><br>
+									425 Huntington Trails Dr<br>
+									Festus, MO 63028<br>
+									314-220-6262<br>
+									704-333-2232 (Fax)<br>
+									<a href="http://www.triggsphoto.com">www.triggsphoto.com</a><br>
+								</p>
+							</div>
+							<div class="company">
+								<img src="img/live-local-logo.png" class="Logo-square">
+								<p><b>Live Local Realty</b><br>
+									Ginger Fawcett<br>
+									423 N. Sappington<br>
+									Glendale, MO 63122<br>
+									314-965-5599<br>
+									314-329-3300 (Fax)<br>
+									<a href="http://www.websterkirkwood.com/Contact/page_1683449.html">www.websterkirkwood.com</a><br>
+								</p>
+							</div>
+							<div class="company">
+								<img src="img/wholesale-siding-logo.png" class="Logo-rect">
+								<p><b>Wholesale Siding Depot</b><br>
+									9860 Big Bend Road<br>
+									St. Louis, MO 63122<br>
+									314-966-9988<br>
+									314-966-4929 (Fax)<br>
+									<a href="http://www.websterkirkwood.com/Contact/page_1683449.html">www.websterkirkwood.com</a><br>
+								</p>
+							</div>
+
 
 						</div>
 						<div id="right-col">
 							<div class="company">
-								<img src="img/BW-Logo.png" class="Logo-long-rect">
-								<p>B and W Foundations, Inc.<br>
+								<img src="img/BW-Logo.png" class="Logo-rect">
+								<p><b>B and W Foundations, Inc.</b><br>
 									17418 Manchester Road<br>
 									Wildwood, MO 63038<br>
 									636-458-3626<br>
@@ -121,7 +213,7 @@
 							</div>
 							<div class="company">
 								<img src="img/TreeCourt-Logo.png" class="Logo-long">
-								<p>Tree Court Builders Supply<br>
+								<p><b>Tree Court Builders Supply</b><br>
 									3636 Tree Court Industrial Blvd.<br>
 									St. Louis, MO 63122<br>
 									636-255-7717<br>
@@ -129,24 +221,68 @@
 								</p>
 							</div>
 							<div class="company">
-								<img src="img/Pacific-Lumber-Co-Logo.png" class="Logo-square">
-								<p>Pacific Lumber Company<br>
-									625 S. 4th Street<br>
-									Pacific, MO 63069<br>
-									636-271-3938<br>
-									636-257-6033 (Fax)<br>
-									<a href="http://pacificlumberco.com">www.pacificlumberco.com</a><br>
+								<img src="img/FCB-Banks-Logo.png" class="Logo-rect">
+								<p><b>FCB Banks</b><br>
+									Ken Lake<br>
+									12000 Tesson Ferry Road<br>
+									St Louis, MO 63128<br>
+									314-842-9091<br>
+									<a href="https://www.fcbbanks.com">www.fcbbanks.com</a><br>
 								</p>
 							</div>
 							<div class="company">
-								<img src="img/scott-lee-logo.jpg" class="Logo-square">
-								<p>Scott-Lee Heating Company<br>
+								<img src="img/scott-lee-logo.png" class="Logo-square">
+								<p><b>Scott-Lee Heating Company</b><br>
 									11010 Gravois Ind. Ct.<br>
 									St. Louis, MO 63128<br>
 									314-756-9444<br>
 									<a href="https://scottleeheating.com">www.scottleeheating.com</a><br>
 								</p>
 							</div>
+							<div class="company">
+								<img src="img/title-partners-logo.png" class="Logo-long">
+								<p><b>Title Partners Agency, LLC</b><br>
+									13560 N. Barrett Pkwy Dr<br>
+									St. Louis, MO 63131<br>
+									314-835-3600<br>
+									<a href="https://titlepartnersagency.com/">www.titlepartnersagency.com</a><br>
+								</p>
+							</div>
+							<div class="company">
+								<img src="img/Contech-Logo.jpg" class="Logo-long">
+								<p><b>Cont-Tech Building Components</b><br>
+									112 Majestic Lane<br>
+									Moscow Mills, MO 63379<br>
+									636-366-9100<br>
+									636-366-9030 (Fax)<br>
+									<a href="http://www.contechtruss.com/Home_Page.html">www.contechtruss.com</a><br>
+								</p>
+							</div>
+							<div class="company">
+								<p><b>Crestwood Plumbing Co., Inc</b><br>
+									9131 Watson Industiral Park<br>
+									Crestwood, MO 63126<br>
+									314-968-2840<br>
+								</p>
+							</div>
+							<div class="company">
+								<img src="img/Jay-Electric-Logo.png" class="Logo-long-rect">
+								<p><b>Jay Electric Co.</b><br>
+									12643 Rott Rd<br>
+									Saint Louis, MO 63127<br>
+									314-822-4406<br>
+								</p>
+							</div>
+							<div class="company">
+								<img src="img/henry-kitchen-bath-logo.png" class="Logo-x-long">
+								<p><b>Henry Kitchen &amp; Bath</b><br>
+									12012 Manchester Rd<br>
+									St. Louis, MO 63131<br>
+									314-773-3636<br>
+									<a href="https://www.henrykitchenandbath.com/">www.henrykitchenandbath.com</a><br>
+								</p>
+							</div>
+
 						</div>
 					</div>	
 				</div>
@@ -164,7 +300,7 @@
 							<p id="customer-description"><strong class="firstLetter">C</strong>lick a link below to read what several of our satisfied customers have to say about their experiences with Scharf Custom Homes...</p>
 							<p name="Levy" class="customer customer-selected">Laurence C. Levy, Kirkwood Missouri</p>
 							<p name="Butler" class="customer customer-unselected">Robbert C. Butler, Kirkwood, Missouri</p>
-							<p name="Krause" class="customer customer-unselected">Stephen & Nanacy Krause, Chesterfield, Missouri</p>
+							<p name="Krause" class="customer customer-unselected">Stephen & Nancy Krause, Chesterfield, Missouri</p>
 							<p name="Barnes" class="customer customer-unselected">Harry & Marry Lou Barnes, Wildwood, Missouri</p>
 							<p name="Super" class="customer customer-unselected">David L. Super, Des Peres, Missouri</p>
 						</div>
@@ -173,15 +309,19 @@
 				</div>
 				
 				<div id="process" class="about-section">
-				<h2>Our Process</h2>
-				<p><strong class="firstLetter">A</strong>&nbsp;custom home starts out as a collection of ideas from you, our client, gathered in your search for the perfect home. Ocassionally, a client will already have a plan drawn by an architect, a perfectly good way to begin. More often, the process starts with an exchange of information. You provide us with your needs, desires, and expectations. We listen carefully, digest this information, then give to you in return our suggestions and cost information.<br><br>Once we are in accord, the creative process is underway. The end result of that creative process is a plan for your home, feature for feature, down to the smallest detail. You will know before one shovel of earth is turned just what your home will look like, exactly where it will sit on your lot, approximately how long it will take to complete and what the cost will be stage by stage.<br><br>Together we will select colors, flooring, wall coverings, fixtures, millwork--everything that will make your home uniquely yours. There are literally hundreds of details that must be planned and executed on a timely basis before we can call a home completed. Once construction begins, you will be kept informed of the progress as the building process procedes. This communication is very important to us-and to you--and is one big reason why we have so many satisfied customers.</p>
+					<h2>Our Process</h2>
+					<p><strong class="firstLetter">A</strong>&nbsp;custom home starts out as a collection of ideas from you, our client, gathered in your search for the perfect home. Ocassionally, a client will already have a plan drawn by an architect, a perfectly good way to begin. More often, the process starts with an exchange of information. You provide us with your needs, desires, and expectations. We listen carefully, digest this information, then give to you in return our suggestions and cost information.<br><br>Once we are in accord, the creative process is underway. The end result of that creative process is a plan for your home, feature for feature, down to the smallest detail. You will know before one shovel of earth is turned just what your home will look like, exactly where it will sit on your lot, approximately how long it will take to complete and what the cost will be stage by stage.<br><br>Together we will select colors, flooring, wall coverings, fixtures, millwork--everything that will make your home uniquely yours. There are literally hundreds of details that must be planned and executed on a timely basis before we can call a home completed. Once construction begins, you will be kept informed of the progress as the building process procedes. This communication is very important to us-and to you--and is one big reason why we have so many satisfied customers.</p>
 				</div>
 
 				<div id="renovations" class="about-section">
-				<h2>Renovations</h2>
-				<p><strong class="firstLetter">T</strong>hese days, many people are opting to remodel their existing home rather than buy a new one. If this is the case for you, doesn’t it make sense to work with a builder that has the talent and experience to completely build a custom home from scratch? Although this would be ideal, many people mistakenly believe it would cost more for that expertise. With Scharf Custom Homes, it does not cost more.<br><br>In fact, the value is tremendous. You will get the complete focus and attention of John Scharf on your remodeling project, just the same as if he was building your home from scratch. </p>
+					<h2>Renovations</h2>
+					<div id="renovations-flex">
+						<div id="renovations-image-border"><img src="img/Villa-Living-Room.jpg" id="renovations-image"></div>
+						<p><strong class="firstLetter">T</strong>hese days, many people are opting to remodel their existing home rather than buy a new one. If this is the case for you, doesn’t it make sense to work with a builder that has the talent and experience to completely build a custom home from scratch? Although this would be ideal, many people mistakenly believe it would cost more for that expertise. With Scharf Custom Homes, it does not cost more.<br><br>In fact, the value is tremendous. You will get the complete focus and attention of John Scharf on your remodeling project, just the same as if he was building your home from scratch. </p>
+					</div>
 				</div>
 			</div>
+			<div class="top-of-page"><a href="#top">Top of Page</a></div>
 			<hr>
 			<div id="footer">
 				<div id="footer">

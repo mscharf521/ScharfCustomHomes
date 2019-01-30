@@ -1,0 +1,133 @@
+/*---------GALLERY----------------------------------------------*/
+
+
+.category-header {
+	text-align: center;
+}
+
+.arrow {
+	display: none;
+}
+
+/*
+#category-menu { shouldnt need
+	display: block;
+	width: 100%
+	height: auto;
+	text-align: left;
+	z-index: 1000;
+}
+
+.gallery-col {
+	padding-bottom: 50px;
+	height: 180px;
+}
+
+.gallery-col-tall {
+	padding-bottom: 50px;
+	height: 290px;
+}
+
+.gallery-row {
+	float: left;
+	width: 33.3%;
+}*/
+
+.gallery-holder {
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 100%
+	height: auto;
+	margin: 0 5px;
+}
+
+.gallery-col {
+	border-color: transparent;
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	height: auto;
+	padding: 0 5px;
+	padding-bottom: 50px;
+}
+
+.gallery-col-tall {
+	background-color: transparent;
+	display: flex;
+	flex-direction: row;
+	flex: 2;
+	justify-content: space-between;
+	height: auto;
+	padding: 0px 5px;
+	padding-bottom: 50px;
+}
+
+.gallery-row {
+	background-color: transparent;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gallery-img-border {
+	margin: auto;
+	width: 70%;
+	padding: 5px 5px;
+	background-color: #FEFEFE;
+}
+
+.gallery-img-border-tall {
+	margin: auto;
+	width: 50%;
+	padding: 5px 5px;
+	background-color: #FEFEFE;
+}
+
+.gallery-img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 768px) {
+	/*Fixes the difference in list length from about to gallery
+	 alter width of list to make structure match*/
+	#category-list {
+		margin-right: auto;
+		margin-left: auto;
+		width: 80vw;
+		margin-bottom: 20px;
+	}
+
+	.category-header {
+		cursor: pointer;
+	}
+
+	.arrow {
+		display: initial;
+		font-size: 7vw;
+	}
+
+	.gallery-holder { 
+		display: none;
+		justify-content: space-around;
+		margin: 0;
+	}
+
+	.gallery-col {
+		flex-direction: column;
+		justify-content: space-around;
+		height: 200vw;
+		padding: 0;
+	}
+
+	.gallery-col-tall {
+		flex-direction: column;
+		height: 275vw;
+		padding: 0;
+	}
+
+}

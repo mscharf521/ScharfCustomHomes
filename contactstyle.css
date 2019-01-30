@@ -1,0 +1,58 @@
+/*--------CONTACT---------------------------------------------------*/
+
+#contact-info {
+	font-size: 130%;
+	text-align: left;
+	color: #242424;
+	margin-left: 50px;
+}
+
+#contact-info p {
+
+}
+
+.contact-header {
+	font-size: 160%;
+}
+
+#contact-image-border {
+	margin: 5px 30px;
+	width: 45%;
+	float: right;
+	padding: 10px 10px;
+	background-color: #FEFEFE;
+	border-radius: 5px;
+}
+
+#contact-image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+	#contact-info {
+		font-size: 120%;
+		text-align: center;
+		color: #242424;
+		margin-left: 0px;
+	}
+
+	#contact-info p {
+
+	}
+
+	.contact-header {
+		font-size: 160%;
+	}
+
+	#contact-image-border {
+		display: none;
+	}
+
+	#contact-image {
+		display: none;
+	}
+
+}

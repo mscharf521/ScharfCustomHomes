@@ -6,6 +6,12 @@ jQuery(document).ready(function() {
 
 	});
 
+	jQuery("#nav-mobile-x-button").click(function() {
+
+		jQuery("#nav-mobile").slideToggle();
+
+	});
+
 	jQuery("#scharf-toggler").click(function() {
 
 		jQuery("#scharf").show();
@@ -71,6 +77,18 @@ jQuery(document).ready(function() {
 		jQuery("#" + $(this).attr('name')).addClass("testimony-selected");
 	})
 
+	jQuery(".category-header").click(function() {
+		var up = "\u2227";
+		var down = "\u2228";
+
+		jQuery("#" + jQuery(this).attr('id') + "-holder").toggle();
+
+		if (jQuery("#" + jQuery(this).attr('id') + "-arrow").text() == up) {
+			jQuery("#" + jQuery(this).attr('id') + "-arrow").text(down);
+		} else {
+			jQuery("#" + jQuery(this).attr('id') + "-arrow").text(up);
+		}
+	})
 
 
 

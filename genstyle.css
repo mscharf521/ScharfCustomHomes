@@ -1,0 +1,413 @@
+
+body {
+	background-image: url(img/stone-back2.jpg);
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans';
+}
+
+#back {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	height: 100%;
+}
+
+#content {
+	max-width: 1300px;
+	min-width: 1250px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 40px;
+	color: #242424;
+	border-radius: 10px;
+}
+
+h1 {
+	font-size: 250%;
+	text-align: center;
+}
+
+/*------------------------HEADER----------------------------------*/
+
+header {
+	/*max-width: 1300px;*/
+	min-width: 1250px;
+	display: flex;
+	width: 100%;
+	height: 60px;
+	margin-top: 50px;
+	background-color: #FFF7E6;
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+}
+
+#logo{
+	background-color: transparent;
+	flex: 4;
+}
+
+#div2 {
+	background-color: transparent;
+	flex: 1;
+}
+
+#nav {
+	background-color: transparent;
+	display: block;	
+	flex: 9;
+	align-items: center;
+}
+
+#logo #Scharf-Logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 120px;
+	margin-top: -30px;
+	box-shadow: 0px 0px 15px black;
+}
+
+#logo #Cottage-Logo {
+	margin-top: 2px;
+	margin-bottom: 5px;
+	width: 50%;
+	margin-left: 25%;
+}
+
+#shadow-1 {
+	display: none;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	max-height: 35px;
+}
+
+#shadow-2 {
+	display: none;
+	position: absolute;
+	top: 85px;
+	width: 100%;
+	max-height: 35px;
+}
+
+/*---------NAV--------------------------------------*/
+
+#nav-list {
+	margin-right: auto;
+	margin-left: auto;
+	width: auto;
+	margin-top: 6px;
+	height: 100%;
+	background-color: transparent;
+	list-style-type: none;
+	float: right;
+}
+
+#nav-list li {
+	display: inline-block;
+	font-size: 180%;
+	padding: 5px 18px;
+	white-space: nowrap;
+}
+
+.vert-nav-div {
+	border-right: 2px solid #552800;
+}
+
+#nav-list li a {
+	text-decoration: none;
+	color: #2C2C2C;
+}
+
+#nav-list li a:hover {
+	text-decoration: none;
+	color: #bd926c;
+}
+
+#nav-mobile {
+	display: none;
+}
+#nav-toggler {
+	display: none;
+}
+#toggler-image {
+	display: none;
+}
+/*----------top of page link-----*/
+#top {
+	position: absolute;
+	top: 0;
+}
+
+.top-of-page {
+	display: none;
+	width: 100%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.top-of-page a {
+	text-decoration: none;
+	color: #2C2C2C;
+}
+
+.top-of-page a:hover {
+	text-decoration: none;
+	color: #bd926c;
+}
+
+/*-----------FOOTER------------------------------------------------*/
+
+
+#footer {
+	max-width: 1300px;
+	min-width: 1250px;
+	margin-left: auto;
+	margin-right: auto; 
+	width: 100%;
+	height: auto;
+	text-align: center;
+	font-family: 'Open Sans';
+	margin-bottom: 30px;
+}
+
+#foot-left {
+	float: none;
+	width: 100%;
+	height: auto;
+}
+
+#foot-right {
+	display: none;
+	/*float: none;
+	width: 100%;
+	height:auto;
+	padding-bottom: 20px;*/
+}
+
+#footerInfo {
+	margin-top: -10px;
+	font-size: 90%;
+	padding: -10px;
+	text-align: center;
+}
+
+#emailLink {
+	text-decoration: none;
+	color: #000111;
+}
+
+#footerCopyright {
+	font-size: 80%;
+	margin: 5px auto;
+	text-align: center;
+	float: none;
+}
+/************Catergory menu for about and gallery*******/
+#category-list {
+	list-style-type: none;
+	text-align: center;
+}
+
+#category-list li {
+	display: inline-block;
+	font-size: 180%;
+	padding: 5px 10px;
+	margin: 0;
+	z-index: 100;
+	border-right: 2px solid black;
+}
+
+#category-list li:last-child {
+
+	border-right: none;
+}
+
+#category-list li a {
+	text-decoration: none;
+	width: 100%;
+	color: #2C2C2C;
+}
+
+#category-list li a:hover {
+	color: #bd926c;
+}
+
+@media screen and (max-width: 768px) {
+
+	#content {
+		min-width: 0px;
+	}
+
+	h1 {
+		font-size: 200%;
+	}
+
+	/*------------------------HEADER----------------------------------*/
+	header {
+		width: 100%;
+		min-width: 0px;
+	}
+
+	#logo {
+		flex: 1;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#logo #Cottage-Logo {
+		display: none;
+	}
+
+	#div2 {
+		flex: 0;
+		display: none;
+	}
+
+	#nav {
+		flex: 0;
+		display: none;
+	}
+
+	.vert-nav-div {
+		border-right: none;
+		border-bottom: 1px solid #DFDBC7;
+	}
+
+	#nav-mobile {
+		position: fixed;
+		top: 0;
+		display: none;
+		width: 100%;
+		height: 100%;
+		background-color: #FFF7E6;
+		z-index: 1000000;
+	}
+
+	#nav-list-mobile {
+		margin-top: 10px;
+		display: block;
+		width: 90%;
+		list-style: none;
+		padding-left: 5%;
+	}
+
+	#nav-list-mobile li {
+		text-align: center;
+		display: block;
+		width: 100%;
+		font-size: 180%;
+		margin-top: 5px;
+		padding-bottom: : 5px; 
+	}
+
+	#nav-list-mobile li a {
+		text-decoration: none;
+		color: #2C2C2C;
+	}
+
+	#nav-list-mobile li a:hover {
+		text-decoration: none;
+		color: #bd926c;
+	}
+
+	#nav-mobile-x-button {
+		background-color: #dbcba7;
+		margin-top: 200px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: auto;
+		margin-left: auto;
+		cursor: pointer;
+		width: 70px;
+		height: 70px;
+		border-radius: 10vw;
+		/*border-bottom: 3px solid #2C2C2C;*/
+	}
+	#nav-mobile-x-button:active {
+		background-color: #7e6e4c;
+	}
+
+	#nav-mobile-x-button img {
+		width: 70%;
+	}
+
+	#nav-toggler {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 5px;
+		width: 40px;
+		height: 34px;
+		margin: 11vw auto -1vw auto;
+		vertical-align: middle;
+		cursor: pointer;
+		background-color: rgba(0,0,0,0.1);
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.4) inset;
+		border-radius: 5px;
+	}
+
+	#toggler-image {
+		display: block;
+		width: 90%;
+	}
+
+	/*----------top of page link-----*/
+	.top-of-page {
+		display: block;
+	}
+
+	#footer {
+		width: 100%;
+		min-width: 0px;
+	}
+
+	#footerInfo {
+		font-size: 80%;
+	}
+
+	/************Catergory menu for about and gallery*******/
+
+	#category-list {
+		list-style-type: none;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	#category-list li {
+		display: inline-block;
+		font-size: 5vw;
+		padding: 5px 5px;
+		margin: 0 -3px;
+		z-index: 100;
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+	}
+
+	#category-list li:first-child {
+		border-right-color: transparent;
+	}
+
+	#category-list li:nth-child(2) {
+		border-right-color: transparent;
+	}
+
+	#category-list li:last-child {
+		border-left-color: transparent;
+		border-right: 1px solid black;
+	}
+
+	#category-list li a {
+		text-decoration: none;
+		width: 100%;
+		color: #2C2C2C;
+	}
+
+	#category-list li a:hover {
+		color: #bd926c;
+	}
+}

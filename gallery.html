@@ -3,7 +3,8 @@
 
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="genstyle.css">
+		<link rel="stylesheet" type="text/css" href="gallerystyle.css">
 		<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="script.js"></script>
@@ -17,15 +18,18 @@
 
 	</head>
 	<body>
+		<div id="top"></div>
 		<div id="back">
+			<!--header-->
+			
 			<header>
-				<a href="index.html">
-					<img src="img/Scharf Logo.jpg" id="logo"></img>
-				</a>
-
-				<nav>
-
-					<a href="#" id="menu-icon"><img src="img/menu-button.png" id="menu-icon-img"></a>
+				
+				<div id="logo">
+					<a href="index.html"><img id="Scharf-Logo" src="img/Scharf Logo.jpg"></img></a>
+					<img src="img/Cottage-Company2.png" id="Cottage-Logo">
+				</div>
+				<div id="div2"></div>
+				<div id="nav">
 					<ul id="nav-list">
 						<li class="vert-nav-div"><a href="index.html">Home</a></li>
 						<li class="vert-nav-div"><a href="about.html">About</a></li>
@@ -33,20 +37,24 @@
 						<li class="vert-nav-div"><a href="gallery.html">Gallery</a></li>
 						<li><a href="contact.html">Contact Us</a></li>
 					</ul>
-				</nav>
+				</div>
+				
 				<img src="img/shadow-1.png" id="shadow-1">
 				<img src="img/shadow-2.png" id="shadow-2">
-				<div id="nav-toggler"><img src="img/menu-button.png" id="toggler-image"></div>
-				<div id="nav-mobile">
-					<ul id="nav-list-mobile">
-						<li class="vert-nav-div"><a href="index.html">Home</a></li>
-						<li class="vert-nav-div"><a href="about.html">About</a></li>
-						<li class="vert-nav-div"><a href="properties.html">Properties</a></li>
-						<li class="vert-nav-div"><a href="gallery.html">Gallery</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
-					</ul>
-				</div>
+				
 			</header>
+			<div id="nav-toggler"><img src="img/menu-button.png" id="toggler-image"></div>
+			<div id="nav-mobile">
+				<ul id="nav-list-mobile">
+					<li class="vert-nav-div"><a href="index.html">Home</a></li>
+					<li class="vert-nav-div"><a href="about.html">About</a></li>
+					<li class="vert-nav-div"><a href="properties.html">Properties</a></li>
+					<li class="vert-nav-div"><a href="gallery.html">Gallery</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+				<div id="nav-mobile-x-button"><img src="img/x-mark.png"></div>
+			</div>
+			<!--header-->
 
 			<div id="content">
 				<h1>Gallery</h1>
@@ -56,174 +64,225 @@
 						<li><a href="#Interiors">Interiors</a></li>
 						<li><a href="#Kitchens">Kitchens</a></li>
 						<li><a href="#Baths">Baths</a></li>
-						<li><a href="#Bedrooms">Bedrooms</a></li>
 					</ul>
 				</div>
 				<hr>
-				<h2 id="Exteriors" class="category-header">Exteriors</h2>
-				<div class="gallery-holder">
+				<h2 id="Exteriors" class="category-header">Exteriors <strong class="arrow" id="Exteriors-arrow">&#8744;</strong></h2>
+				<div class="gallery-holder" id="Exteriors-holder">
 					<div class="gallery-col">
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Huntbridge-Front-2.jpg" rel="lightbox[Exteriors]"><img src="img/Huntbridge-Front-2.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/exteriors/Huntbridge-Front-2.jpg" rel="lightbox[Exteriors]"><img src="img/exteriors/Huntbridge-Front-2.jpg" class="gallery-img"></a></div>
 						</div>
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/West-Washington-Front.jpg" rel="lightbox[Exteriors]"><img src="img/West-Washington-Front.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/exteriors/West-Washington-Front.jpg" rel="lightbox[Exteriors]"><img src="img/exteriors/West-Washington-Front.jpg" class="gallery-img"></a></div>
 						</div>
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Parkwoods-Front.jpg" rel="lightbox[Exteriors]"><img src="img/Parkwoods-Front.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/exteriors/Parkwoods-Front.jpg" rel="lightbox[Exteriors]"><img src="img/exteriors/Parkwoods-Front.jpg" class="gallery-img"></a></div>
 						</div>
 					</div>
 					<div class="gallery-col">
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Huntbridge-Back.jpg" rel="lightbox[Exteriors]"><img src="img/Huntbridge-Back.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/exteriors/Huntbridge-Back.jpg" rel="lightbox[Exteriors]"><img src="img/exteriors/Huntbridge-Back.jpg" class="gallery-img"></a></div>
 						</div>
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Lockett-Front.jpg" rel="lightbox[Exteriors]"><img src="img/Lockett-Front.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/exteriors/Lockett-Front.jpg" rel="lightbox[Exteriors]"><img src="img/exteriors/Lockett-Front.jpg" class="gallery-img"></a></div>
 						</div>
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Cherry-Back.jpg" rel="lightbox[Exteriors]"><img src="img/Cherry-Back.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/exteriors/Parkwoods-Porch.jpg" rel="lightbox[Exteriors]"><img src="img/exteriors/Parkwoods-Porch.jpg" class="gallery-img"></a></div>
+						</div>
+					</div>
+					<div class="gallery-col">
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="img/exteriors/924Dickson-Front.jpg" rel="lightbox[Exteriors]"><img src="img/exteriors/924Dickson-Front.jpg" class="gallery-img"></a></div>
+						</div>
+						<div class="gallery-row">
+							<div class="gallery-img-border-tall"><a href="img/exteriors/924Dickson-Front-Door.jpg" rel="lightbox[Exteriors]"><img src="img/exteriors/924Dickson-Front-Door.jpg" class="gallery-img"></a></div>
+						</div>
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="img/exteriors/924Dickson-Back.jpg" rel="lightbox[Exteriors]"><img src="img/exteriors/924Dickson-Back.jpg" class="gallery-img"></a></div>
 						</div>
 					</div>
 				</div>
 				<hr>
-				<h2 id="Interiors" class="category-header">Interiors</h2>
-				<div class="gallery-holder">
+				<h2 id="Interiors" class="category-header">Interiors <strong class="arrow" id="Interiors-arrow">&#8744;</strong></h2>
+				<div class="gallery-holder" id="Interiors-holder">
 					<div class="gallery-col">
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Parkwoods-Living-Room.jpg" rel="lightbox[Interiors]"><img src="img/Parkwoods-Living-Room.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/interiors/Parkwoods-Living-Room.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Parkwoods-Living-Room.jpg" class="gallery-img"></a></div>
 						</div>
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Evans-Living-Room.jpg" rel="lightbox[Interiors]"><img src="img/Evans-Living-Room.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/interiors/Parkwoods-Living-Room-2.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Parkwoods-Living-Room-2.jpg" class="gallery-img"></a></div>
 						</div>
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Villa-Living-Room.jpg" rel="lightbox[Interiors]"><img src="img/Villa-Living-Room.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/interiors/Cherry-Living-Room.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Cherry-Living-Room.jpg" class="gallery-img"></a></div>
 						</div>
 					</div>
 					<div class="gallery-col-tall">
 						<div class="gallery-row">
-							<div class="gallery-img-border-tall"><a href="img/Lillian-Hallway.jpg" rel="lightbox[Interiors]"><img src="img/Lillian-Hallway.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border-tall"><a href="img/interiors/Lillian-Hallway.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Lillian-Hallway.jpg" class="gallery-img"></a></div>
 						</div>
 						<div class="gallery-row">
-							<div class="gallery-img-border-tall"><a href="img/Huntbridge-Study.jpg" rel="lightbox[Interiors]"><img src="img/Huntbridge-Study.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border-tall"><a href="img/interiors/Huntbridge-Study.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Huntbridge-Study.jpg" class="gallery-img"></a></div>
 						</div>
 						<div class="gallery-row">
-							<div class="gallery-img-border-tall"><a href="img/Parkwoods-Sun-Room.jpg" rel="lightbox[Interiors]"><img src="img/Parkwoods-Sun-Room.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border-tall"><a href="img/interiors/Parkwoods-Sun-Room.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Parkwoods-Sun-Room.jpg" class="gallery-img"></a></div>
 						</div>
 					</div>
 					<div class="gallery-col">
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Lockett-Living-Room.jpg" rel="lightbox[Interiors]"><img src="img/Lockett-Living-Room.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/interiors/Lockett-Living-Room.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Lockett-Living-Room.jpg" class="gallery-img"></a></div>
 						</div>
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Lockett-Bedroom.jpg" rel="lightbox[Interiors]"><img src="img/Lockett-Bedroom.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/interiors/Lockett-Bedroom.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Lockett-Bedroom.jpg" class="gallery-img"></a></div>
 						</div>
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Lockett-Dining-Room.jpg" rel="lightbox[Interiors]"><img src="img/Lockett-Dining-Room.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/interiors/Lockett-Dining-Room.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Lockett-Dining-Room.jpg" class="gallery-img"></a></div>
+						</div>
+					</div>
+					<div class="gallery-col-tall">
+						<div class="gallery-row">
+							<div class="gallery-img-border-tall"><a href="img/interiors/Janet-Pantry.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Janet-Pantry.jpg" class="gallery-img"></a></div>
+						</div>
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="img/interiors/Lockett-Fireplace.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Lockett-Fireplace.jpg" class="gallery-img"></a></div>
+						</div>
+						<div class="gallery-row">
+							<div class="gallery-img-border-tall"><a href="img/interiors/Parkwoods-Archway.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Parkwoods-Archway.jpg" class="gallery-img"></a></div>
+						</div>
+					</div>
+					<div class="gallery-col">
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="img/interiors/Evans-Living-Room.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Evans-Living-Room.jpg" class="gallery-img"></a></div>
+						</div>
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="img/interiors/924Dickson-Living-Room.jpg" rel="lightbox[Interiors]"><img src="img/interiors/924Dickson-Living-Room.jpg" class="gallery-img"></a></div>
+						</div>
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="img/interiors/924Dickson-Living-Room-2.jpg" rel="lightbox[Interiors]"><img src="img/interiors/924Dickson-Living-Room-2.jpg" class="gallery-img"></a></div>
+						</div>
+					</div>
+					<div class="gallery-col">
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="img/interiors/Lillian-Built-Ins.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Lillian-Built-Ins.jpg" class="gallery-img"></a></div>
+						</div>
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="img/interiors/Lillian-Dining-Room.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Lillian-Dining-Room.jpg" class="gallery-img"></a></div>
+						</div>
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="img/interiors/Lillian-Living-Room.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Lillian-Living-Room.jpg" class="gallery-img"></a></div>
+						</div>
+					</div>
+					<div class="gallery-col">
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="img/interiors/Parkwoods-Bedroom.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Parkwoods-Bedroom.jpg" class="gallery-img"></a></div>
+						</div>
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="img/interiors/Parkwoods-Front-Door.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Parkwoods-Front-Door.jpg" class="gallery-img"></a></div>
+						</div>
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="img/interiors/Lillian-Stairway.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Lillian-Stairway.jpg" class="gallery-img"></a></div>
+						</div>
+					</div>
+					<div class="gallery-col">
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="img/interiors/Janet-Living-Room.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Janet-Living-Room.jpg" class="gallery-img"></a></div>
+						</div>
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="img/interiors/Lockett-Room-2.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Lockett-Room-2.jpg" class="gallery-img"></a></div>
+						</div>
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="img/interiors/Lockett-Basement-2.jpg" rel="lightbox[Interiors]"><img src="img/interiors/Lockett-Basement-2.jpg" class="gallery-img"></a></div>
 						</div>
 					</div>
 				</div>
 
 				<hr>
-				<h2 id="Kitchens" class="category-header">Kitchens</h2>
-				<div class="gallery-holder">
+				<h2 id="Kitchens" class="category-header">Kitchens <strong class="arrow" id="Kitchens-arrow">&#8744;</strong></h2>
+				<div class="gallery-holder" id="Kitchens-holder">
 					<div class="gallery-col">
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Villa-Kitchen.jpg" rel="lightbox[Kitchens]"><img src="img/Villa-Kitchen.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/kitchens/Villa-Kitchen.jpg" rel="lightbox[Kitchens]"><img src="img/kitchens/Villa-Kitchen.jpg" class="gallery-img"></a></div>
 						</div>
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Parkwoods-Kitchen.jpg" rel="lightbox[Kitchens]"><img src="img/Parkwoods-Kitchen.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/kitchens/Parkwoods-Kitchen.jpg" rel="lightbox[Kitchens]"><img src="img/kitchens/Parkwoods-Kitchen.jpg" class="gallery-img"></a></div>
 						</div>
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Huntbridge-Kitchen.jpg" rel="lightbox[Kitchens]"><img src="img/Huntbridge-Kitchen.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/kitchens/Huntbridge-Kitchen.jpg" rel="lightbox[Kitchens]"><img src="img/kitchens/Huntbridge-Kitchen.jpg" class="gallery-img"></a></div>
 						</div>
 					</div>
 					<div class="gallery-col">
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Evans-Kitchen.jpg" rel="lightbox[Kitchens]"><img src="img/Evans-Kitchen.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/kitchens/Evans-Kitchen.jpg" rel="lightbox[Kitchens]"><img src="img/kitchens/Evans-Kitchen.jpg" class="gallery-img"></a></div>
 						</div>
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Cherry-Kitchen.jpg" rel="lightbox[Kitchens]"><img src="img/Cherry-Kitchen.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/kitchens/Cherry-Kitchen.jpg" rel="lightbox[Kitchens]"><img src="img/kitchens/Cherry-Kitchen.jpg" class="gallery-img"></a></div>
 						</div>
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/West-Washington-Kitchen.jpg" rel="lightbox[Kitchens]"><img src="img/West-Washington-Kitchen.jpg" class="gallery-img"></a></div>
-						</div>
-					</div>
-					<div class="gallery-col">
-						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Parkwoods-Kitchen-Close.jpg" rel="lightbox[Kitchens]"><img src="img/Parkwoods-Kitchen-Close.jpg" class="gallery-img"></a></div>
-						</div>
-						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Lockett-Kitchen-2.jpg" rel="lightbox[Kitchens]"><img src="img/Lockett-Kitchen-2.jpg" class="gallery-img"></a></div>
-						</div>
-						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Parkwoods-Kitchen-Close.jpg" rel="lightbox[Kitchens]"><img src="img/Parkwoods-Kitchen-Close.jpg" class="gallery-img"></a></div>
-						</div>
-					</div>
-				</div>
-				<hr>
-				<h2 id="Baths" class="category-header">Baths</h2>
-				<div class="gallery-holder">
-					<div class="gallery-col">
-						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Parkwoods-Bath.jpg" rel="lightbox[Baths]"><img src="img/Parkwoods-Bath.jpg" class="gallery-img"></a></div>
-						</div>
-						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Villa-Bath.jpg" rel="lightbox[Baths]"><img src="img/Villa-Bath.jpg" class="gallery-img"></a></div>
-						</div>
-						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Lockett-Bath-2.jpg" rel="lightbox[Baths]"><img src="img/Lockett-Bath-2.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/kitchens/West-Washington-Kitchen.jpg" rel="lightbox[Kitchens]"><img src="img/kitchens/West-Washington-Kitchen.jpg" class="gallery-img"></a></div>
 						</div>
 					</div>
 					<div class="gallery-col">
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Parkwoods-Kitchen.jpg" rel="lightbox[Baths]"><img src="img/Parkwoods-Kitchen.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/kitchens/Janet-Kitchen.jpg" rel="lightbox[Kitchens]"><img src="img/kitchens/Janet-Kitchen.jpg" class="gallery-img"></a></div>
 						</div>
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Lockett-Master-Bath.jpg" rel="lightbox[Baths]"><img src="img/Lockett-Master-Bath.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/kitchens/Lockett-Kitchen-2.jpg" rel="lightbox[Kitchens]"><img src="img/kitchens/Lockett-Kitchen-2.jpg" class="gallery-img"></a></div>
 						</div>
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Lockett-Bath-3.jpg" rel="lightbox[Baths]"><img src="img/Lockett-Bath-3.jpg" class="gallery-img"></a></div>
-						</div>
-					</div>
-					<div class="gallery-col">
-						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Lockett-Master-Bath-2.jpg" rel="lightbox[Baths]"><img src="img/Lockett-Master-Bath-2.jpg" class="gallery-img"></a></div>
-						</div>
-						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Parkwoods-Kitchen.jpg" rel="lightbox[Baths]"><img src="img/Parkwoods-Kitchen.jpg" class="gallery-img"></a></div>
-						</div>
-						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Lockett-Bath-3.jpg" rel="lightbox[Baths]"><img src="img/Lockett-Bath-3.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/kitchens/Parkwoods-Kitchen-Close.jpg" rel="lightbox[Kitchens]"><img src="img/kitchens/Parkwoods-Kitchen-Close.jpg" class="gallery-img"></a></div>
 						</div>
 					</div>
 				</div>
 				<hr>
-				<h2 id="Bedrooms" class="category-header">Bedrooms</h2>
-				<div class="gallery-holder">
+				<h2 id="Baths" class="category-header">Baths <strong class="arrow" id="Baths-arrow">&#8744;</strong></h2>
+				<div class="gallery-holder" id="Baths-holder">
 					<div class="gallery-col">
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Villa-Bedroom.jpg" rel="lightbox[Bedrooms]"><img src="img/Villa-Bedroom.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/baths/Parkwoods-Bath.jpg" rel="lightbox[Baths]"><img src="img/baths/Parkwoods-Bath.jpg" class="gallery-img"></a></div>
 						</div>
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Lockett-Master-Bedroom.jpg" rel="lightbox[Bedrooms]"><img src="img/Lockett-Master-Bedroom.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/baths/Villa-Bath.jpg" rel="lightbox[Baths]"><img src="img/baths/Villa-Bath.jpg" class="gallery-img"></a></div>
 						</div>
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Parkwoods-Kitchen.jpg" rel="lightbox[Bedrooms]"><img src="img/Parkwoods-Kitchen.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/baths/Lockett-Bath-2.jpg" rel="lightbox[Baths]"><img src="img/baths/Lockett-Bath-2.jpg" class="gallery-img"></a></div>
 						</div>
 					</div>
 					<div class="gallery-col">
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Parkwoods-Kitchen.jpg" rel="lightbox[Bedrooms]"><img src="img/Parkwoods-Kitchen.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/baths/924Dickson-Master-Bath.jpg" rel="lightbox[Baths]"><img src="img/baths/924Dickson-Master-Bath.jpg" class="gallery-img"></a></div>
 						</div>
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Parkwoods-Kitchen.jpg" rel="lightbox[Bedrooms]"><img src="img/Parkwoods-Kitchen.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/baths/Lockett-Basement-Bath.jpg" rel="lightbox[Baths]"><img src="img/baths/Lockett-Basement-Bath.jpg" class="gallery-img"></a></div>
 						</div>
 						<div class="gallery-row">
-							<div class="gallery-img-border"><a href="img/Parkwoods-Kitchen.jpg" rel="lightbox[Bedrooms]"><img src="img/Parkwoods-Kitchen.jpg" class="gallery-img"></a></div>
+							<div class="gallery-img-border"><a href="img/baths/Janet-Master-Bath.jpg" rel="lightbox[Baths]"><img src="img/baths/Lockett-Bath.jpg" class="gallery-img"></a></div>
+						</div>
+					</div>
+					<div class="gallery-col">
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="img/baths/Janet-Master-Bath.jpg" rel="lightbox[Baths]"><img src="img/baths/Janet-Master-Bath.jpg" class="gallery-img"></a></div>
+						</div>
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="img/baths/Lillian-Master-Bath.jpg" rel="lightbox[Baths]"><img src="img/baths/Lillian-Master-Bath.jpg" class="gallery-img"></a></div>
+						</div>
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="img/baths/Lillian-Master-Bath-2.jpg" rel="lightbox[Baths]"><img src="img/baths/Lillian-Master-Bath-2.jpg" class="gallery-img"></a></div>
+						</div>
+					</div>
+					<div class="gallery-col">
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="img/baths/Lockett-Master-Bath.jpg" rel="lightbox[Baths]"><img src="img/baths/Lockett-Master-Bath.jpg" class="gallery-img"></a></div>
+						</div>
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="img/baths/Lockett-Master-Bath-2.jpg" rel="lightbox[Baths]"><img src="img/baths/Lockett-Master-Bath-2.jpg" class="gallery-img"></a></div>
+						</div>
+						<div class="gallery-row">
+							<div class="gallery-img-border"><a href="iimg/baths/Lockett-Master-Shower.jpg" rel="lightbox[Baths]"><img src="img/baths/Lockett-Master-Shower.jpg" class="gallery-img"></a></div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="top-of-page"><a href="#top">Top of Page</a></div>
 			
 			<hr>
 			<div id="footer">
