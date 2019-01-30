@@ -1,14 +1,13 @@
 /*--------CONTACT---------------------------------------------------*/
 
+/*could update to be flex box*/
+
 #contact-info {
 	font-size: 130%;
 	text-align: left;
 	color: #242424;
 	margin-left: 50px;
-}
-
-#contact-info p {
-
+	margin-bottom: 60px;
 }
 
 .contact-header {
