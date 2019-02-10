@@ -1,7 +1,6 @@
 /*--------------PROPERTIES----------------------------------------*/
 
 #properties-title {
-	font-family: 'Open Sans';
 	width: 100%;
 	text-align: center;
 }
@@ -24,9 +23,18 @@
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.3) inset;
 }
 
+#empty {
+	background-color: transparent;
+	box-shadow: none;
+}
+
 .property-title {
 	font-family: 'Open Sans';
 	text-decoration: none;
+	margin: 0;
+}
+
+.property-city {
 	margin: 0;
 }
 
@@ -37,6 +45,7 @@
 .property-loc a {
 	color: blue;
 	text-decoration: underline;
+	cursor: pointer;
 }
 
 .property-img {
@@ -61,8 +70,8 @@
 	text-shadow: 2px 1px black
 }
 
-.property-desc {
-	font-family: 'Open Sans';
+.property-mls {
+	
 }
 
 @media screen and (max-width: 768px) {

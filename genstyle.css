@@ -45,6 +45,8 @@ header {
 #logo{
 	background-color: transparent;
 	flex: 4;
+	display: flex;
+	flex-direction: column;
 }
 
 #div2 {
@@ -71,8 +73,8 @@ header {
 #logo #Cottage-Logo {
 	margin-top: 2px;
 	margin-bottom: 5px;
-	width: 50%;
-	margin-left: 25%;
+	height: 80px;
+	margin: auto; /* calculated form width*/
 }
 
 #shadow-1 {
@@ -341,8 +343,8 @@ header {
 		align-items: center;
 		padding: 5px;
 		width: 40px;
-		height: 34px;
-		margin: 11vw auto -1vw auto;
+		height: 40px;
+		margin: 7vh auto -3vh auto;
 		vertical-align: middle;
 		cursor: pointer;
 		background-color: rgba(0,0,0,0.1);
