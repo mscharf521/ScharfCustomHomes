@@ -12,7 +12,34 @@
 		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="script.js"></script>
 		<title>Scharf Custom Homes</title>
-
+		<!--Start of Slideshow Code-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- optional touchswipe file to enable swipping to navigate slideshow -->
+		<script type="text/javascript" src="fadeslideshow.js">
+		/***********************************************
+		* Ultimate Fade In Slideshow v2.0- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+		* Please keep this notice intact
+		* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+		***********************************************/
+		</script>
+		<script type="text/javascript">
+		var mygallery=new fadeSlideShow({
+			wrapperid: "slideshow", //ID of blank DIV on page to house Slideshow
+			dimensions: ['100%','100%'], //width/height of gallery in pixels. Should reflect dimensions of largest image
+			imagearray: [
+				["img/interiors/Villa-Living-Room.jpg"],
+				["img/kitchens/Villa-Kitchen.jpg"],
+				//["img/interiors/Parkwoods-Sun-Room.jpg"],
+				["img/interiors/Villa-Bedroom.jpg"] //<--no trailing comma after very last image element!
+			],
+			displaymode: {type:'auto', pause:2500, cycles:0, wraparound:false},
+			persist: false, //remember last viewed slide and recall within same session?
+			fadeduration: 500, //transition duration (milliseconds)
+			descreveal: "always",
+			togglerid: ""
+		})
+		</script>
+		<!--End Slideshow Code-->
 	</head>
 	<body>
 		<div id="top"></div>
@@ -311,15 +338,23 @@
 				
 				<div id="process" class="about-section">
 					<h2>Our Process</h2>
-					<p><strong class="firstLetter">A</strong>&nbsp;custom home starts out as a collection of ideas from you, our client, gathered in your search for the perfect home. Ocassionally, a client will already have a plan drawn by an architect, a perfectly good way to begin. More often, the process starts with an exchange of information. You provide us with your needs, desires, and expectations. We listen carefully, digest this information, then give to you in return our suggestions and cost information.<br><br>Once we are in accord, the creative process is underway. The end result of that creative process is a plan for your home, feature for feature, down to the smallest detail. You will know before one shovel of earth is turned just what your home will look like, exactly where it will sit on your lot, approximately how long it will take to complete and what the cost will be stage by stage.<br><br>Together we will select colors, flooring, wall coverings, fixtures, millwork--everything that will make your home uniquely yours. There are literally hundreds of details that must be planned and executed on a timely basis before we can call a home completed. Once construction begins, you will be kept informed of the progress as the building process procedes. This communication is very important to us-and to you--and is one big reason why we have so many satisfied customers.</p>
+					<div id="process-container">
+						<div id="process-image-border">
+							<img src="img/kitchens/Lillian-Kitchen-Close.jpg" id="process-image">
+						</div>
+						<p><strong class="firstLetter">A</strong>&nbsp;custom home starts out as a collection of ideas from you, our client, gathered in your search for the perfect home. Ocassionally, a client will already have a plan drawn by an architect, a perfectly good way to begin. More often, the process starts with an exchange of information. You provide us with your needs, desires, and expectations. We listen carefully, digest this information, then give to you in return our suggestions and cost information.<br><br>Once we are in accord, the creative process is underway. The end result of that creative process is a plan for your home, feature for feature, down to the smallest detail. You will know before one shovel of earth is turned just what your home will look like, exactly where it will sit on your lot, approximately how long it will take to complete and what the cost will be stage by stage.<br><br>Together we will select colors, flooring, wall coverings, fixtures, millwork--everything that will make your home uniquely yours. There are literally hundreds of details that must be planned and executed on a timely basis before we can call a home completed. Once construction begins, you will be kept informed of the progress as the building process procedes. This communication is very important to us-and to you--and is one big reason why we have so many satisfied customers.</p>
+					</div>
 				</div>
 
 				<div id="renovations" class="about-section">
 					<h2>Renovations</h2>
 					<div id="renovations-flex">
-						<div id="renovations-image-border"><img src="img/Villa-Living-Room.jpg" id="renovations-image"></div>
 						<p><strong class="firstLetter">T</strong>hese days, many people are opting to remodel their existing home rather than buy a new one. If this is the case for you, doesn’t it make sense to work with a builder that has the talent and experience to completely build a custom home from scratch? Although this would be ideal, many people mistakenly believe it would cost more for that expertise. With Scharf Custom Homes, it does not cost more.<br><br>In fact, the value is tremendous. You will get the complete focus and attention of John Scharf on your remodeling project, just the same as if he was building your home from scratch. </p>
-					</div>
+						<div id="slideback" class="renovations-image-border">
+								<div id="slideshow"></div>
+						</div>
+				</div>
+					
 				</div>
 			</div>
 			<div class="top-of-page"><a href="#top">Top of Page</a></div>

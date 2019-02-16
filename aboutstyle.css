@@ -183,6 +183,32 @@
 	display: none;
 }
 
+#process-container {
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#process p {
+	font-size: 120%;
+}
+
+#process-image-border {
+	float: right;
+	width: 50%;
+	height: auto;
+	padding: 10px 10px;
+	background-color: #FEFEFE;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+#process-image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
 #renovations-flex {
 	display: flex;
 	flex-direction: row;
@@ -196,19 +222,24 @@
 	font-size: 120%;
 }
 
-#renovations-image-border {
+.renovations-image-border {
 	flex: 2;
 	order: 2;
-	width: 100%;
-	height: auto;
+	height: 360px;
+	width: 50%;
 	padding: 10px 10px;
 	background-color: #FEFEFE;
 	border-radius: 5px;
 	margin-left: 10px;
 }
 
-#renovations-image {
-	display: block;
+#slideshow {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#slideshow .gallerylayer img{ 
+	/* make all images inside scale to 100% of slideshow width */
 	width: 100%;
 	height: auto;
 }
@@ -311,6 +342,34 @@
 
 	#customer-left {
 		font-size: 90%;
+	}
+
+	#process-image-border {
+		float: none;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#renovations-flex {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#renovations p {
+		flex: 2;
+		order: 2;
+		font-size: 120%;
+	}
+
+	.renovations-image-border {
+		flex: 1;
+		order: 1;
+		height: 55vw;
+		width: 90%;
+		max-width: 615px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 }
