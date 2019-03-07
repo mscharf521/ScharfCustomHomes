@@ -334,7 +334,12 @@
 		width: 75%;
 	}
 
+	#customer-wrapper {
+		flex-direction: column;
+	}
+
 	#customer-right {
+		margin-top: 35px;
 		order: 2;
 		flex: 1;
 		height: 70vh;

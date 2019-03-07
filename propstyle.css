@@ -20,7 +20,7 @@
 	background-color: #FFF7E6;
 	text-align: center;
 	border-radius: 10px;
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.3) inset;
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.3) inset;
 }
 
 #empty {
@@ -40,12 +40,6 @@
 
 .property-loc {
 	margin: 5px auto;
-}
-
-.property-loc a {
-	color: blue;
-	text-decoration: underline;
-	cursor: pointer;
 }
 
 .property-img {
@@ -71,18 +65,40 @@
 }
 
 .property-mls {
-	padding: 0;
+	padding: 0 0 50px 0;
 	margin: 5px;
+}
+
+a {
+	color: black;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+a:hover {
+	color: #444;
 }
 
 @media screen and (max-width: 768px) {
 
 	.property-wrapper {
-	width: 100%;
-	height: auto;
-	margin: 10px auto;
-	display: flex;
-	flex-direction: column;
-}
+		width: 100%;
+		height: auto;
+		margin: 10px auto;
+		display: flex;
+		flex-direction: column;
+	}
+	.property-ribbon {
+		width: 94%;
+		height: 25px;
+		border-radius: 3px;
+		margin-top: 10px;
+		margin-bottom: -31px;
+		box-shadow: 0px 4px 5px rgba(0,0,0,0.2);
+	}
+	.property-mls {
+		padding: 0;
+		margin: -10px 5px 5px 5px;
+	}
 
 }
