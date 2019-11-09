@@ -78,15 +78,19 @@ jQuery(document).ready(function() {
 	})
 
 	jQuery(".category-header").click(function() {
-		var up = "\u2227";
-		var down = "\u2228";
+		page_width = jQuery("body").width();
+		if (page_width <= 768)
+		{
+			var up = "\u2227";
+			var down = "\u2228";
 
-		jQuery("#" + jQuery(this).attr('id') + "-holder").toggle();
+			jQuery("#" + jQuery(this).attr('id') + "-holder").toggle();
 
-		if (jQuery("#" + jQuery(this).attr('id') + "-arrow").text() == up) {
-			jQuery("#" + jQuery(this).attr('id') + "-arrow").text(down);
-		} else {
-			jQuery("#" + jQuery(this).attr('id') + "-arrow").text(up);
+			if (jQuery("#" + jQuery(this).attr('id') + "-arrow").text() == up) {
+				jQuery("#" + jQuery(this).attr('id') + "-arrow").text(down);
+			} else {
+				jQuery("#" + jQuery(this).attr('id') + "-arrow").text(up);
+			}
 		}
 	})
 
