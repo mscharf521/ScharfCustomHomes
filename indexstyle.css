@@ -1,4 +1,9 @@
 /*-----HOME---------------------------------------------------------*/
+#Cottage-Logo-2 {
+	width: 30%;
+	margin: 0px 35%;
+	margin-top: -10px;
+}
 
 #slideback {
 	float: right;
@@ -20,6 +25,10 @@
 #slideshow .gallerylayer img{ 
 	/* make all images inside scale to 100% of slideshow width */
 	width: 100%;
+	#Cottage-Logo-2 {
+		width: 30%;
+		margin: 0px 35%;
+	}
 	height: auto;
 }
 

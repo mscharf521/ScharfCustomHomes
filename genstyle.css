@@ -78,9 +78,9 @@ header {
 
 #logo #Cottage-Logo {
 	display: none;
-	margin-top: 2px;
+	padding-top: 4px;
 	margin-bottom: 5px;
-	height: 80px;
+	width: 40%;
 	margin: auto; /* calculated form width*/
 }
 
