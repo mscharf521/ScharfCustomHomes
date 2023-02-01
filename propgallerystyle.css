@@ -1,0 +1,145 @@
+
+.gallery-holder {
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 100%;
+	height: auto;
+	margin: 0 5px;
+}
+
+.gallery-col {
+	border-color: transparent;
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	height: auto;
+	padding: 0 5px;
+	padding-bottom: 50px;
+}
+
+.gallery-col-tall {
+	background-color: transparent;
+	display: flex;
+	flex-direction: row;
+	flex: 2;
+	justify-content: space-between;
+	height: auto;
+	padding: 0px 5px;
+	padding-bottom: 50px;
+}
+
+.gallery-col-tall-1 {
+	background-color: transparent;
+	display: flex;
+	flex-direction: row;
+	flex: 2;
+	justify-content: space-between;
+	height: auto;
+	padding: 0px 5px;
+	padding-bottom: 50px;
+}
+
+.gallery-col-tall-2 {
+	background-color: transparent;
+	display: flex;
+	flex-direction: row;
+	flex: 2;
+	justify-content: space-between;
+	height: auto;
+	padding: 0px 5px;
+	padding-bottom: 50px;
+}
+
+.gallery-row {
+	background-color: transparent;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gallery-row-tall {
+	background-color: transparent;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.prop-main-gallery-img-border {
+    margin: auto;
+    margin-bottom: 50px;
+	width: 50%;
+	padding: 5px 5px;
+	background-color: #FEFEFE;
+}
+
+.gallery-img-border {
+	margin: auto;
+	width: 70%;
+	padding: 5px 5px;
+	background-color: #FEFEFE;
+}
+
+.gallery-img-border-tall {
+	margin: auto;
+	width: 50%;
+	padding: 5px 5px;
+	background-color: #FEFEFE;
+}
+
+.gallery-img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .prop-main-gallery-img-border {
+        margin: auto;
+        margin-bottom: 40px;
+        width: 70%;
+        padding: 5px 5px;
+        background-color: #FEFEFE;
+    }
+
+	.gallery-holder { 
+		justify-content: space-around;
+		margin: 0;
+	}
+
+	.gallery-col {
+		flex-direction: column;
+		height: 200vw;
+		padding: 0;
+	}
+
+	.gallery-col-tall {
+		flex-direction: column;
+		height: 270vw;
+		padding: 0;
+	}
+
+	.gallery-col-tall-1 {
+		flex-direction: column;
+		height: 230vw;
+		padding: 0;
+	}
+
+	.gallery-col-tall-2 {
+		flex-direction: column;
+		height: 250vw;
+		padding: 0;
+	}
+
+	.gallery-row {
+		flex: 2;
+	}
+
+	.gallery-row-tall {
+		flex: 3;
+	}
+
+}
